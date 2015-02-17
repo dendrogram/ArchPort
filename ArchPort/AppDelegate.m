@@ -17,6 +17,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    sleep(1);
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Archery Scoring Sheet"
+                                                        message:@"Portsmouth Round"
+                                                       delegate:self
+                                              cancelButtonTitle:@"Continue"
+                                              otherButtonTitles:nil];
+    
+    UILabel *txtField = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, 180, 230)];
+    
+    //[txtField setFont:[UIFont fontWithName:@"Serifa-Roman" size:(16.0f)]];
+    
+    txtField.numberOfLines = 8;
+    txtField.textColor = [UIColor darkGrayColor];
+    txtField.backgroundColor = [UIColor clearColor];
+    txtField.textAlignment = NSTextAlignmentCenter;
+    
+    txtField.text = @"To see details on how to \nuse this Application\n and adjust its settings, \nplease read the notes in \nthe 'Information' section.";
+    
+    [alertView setValue:txtField forKeyPath:@"accessoryView"]; //for ios 7 and above
+    
+    [alertView show];
+    
+    // set all labels to Serifa Font 24
+    
+    // UIFont *serifa12 = [UIFont fontWithName:@"Serifa-Roman" size:14];
+    
+    // [[UILabel appearance] setFont:serifa12];
+    // [[UIButton appearance] setFont:serifa12];//ignore warning as easiest way to alter all button fonts in one go
+    
     return YES;
 }
 
@@ -36,6 +66,26 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Archery Scoring Sheet"
+                                                        message:@"Portsmouth Round"
+                                                       delegate:self
+                                              cancelButtonTitle:@"Continue"
+                                              otherButtonTitles:nil];
+    
+    UILabel *txtField = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, 180, 230)];
+    
+    //[txtField setFont:[UIFont fontWithName:@"Serifa-Roman" size:(16.0f)]];
+    
+    txtField.numberOfLines = 8;
+    txtField.textColor = [UIColor darkGrayColor];
+    txtField.backgroundColor = [UIColor clearColor];
+    txtField.textAlignment = NSTextAlignmentCenter;
+    
+    txtField.text = @"Welcome";
+    
+    [alertView setValue:txtField forKeyPath:@"accessoryView"]; //for ios 7 and above
+    
+    [alertView show];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

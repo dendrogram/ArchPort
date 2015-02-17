@@ -14,6 +14,11 @@
 		E16000FC1A9383FD005B15F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E16000FB1A9383FD005B15F7 /* Images.xcassets */; };
 		E16000FF1A9383FD005B15F7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16000FD1A9383FD005B15F7 /* LaunchScreen.xib */; };
 		E160010B1A9383FD005B15F7 /* ArchPortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E160010A1A9383FD005B15F7 /* ArchPortTests.m */; };
+		E16001151A9384F2005B15F7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16001141A9384F2005B15F7 /* MessageUI.framework */; };
+		E16001171A938556005B15F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16001161A938556005B15F7 /* CoreGraphics.framework */; };
+		E16001191A938564005B15F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16001181A938564005B15F7 /* UIKit.framework */; };
+		E160011B1A93856D005B15F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E160011A1A93856D005B15F7 /* Foundation.framework */; };
+		E160011D1A938577005B15F7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E160011C1A938577005B15F7 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		E16001041A9383FD005B15F7 /* ArchPortTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchPortTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16001091A9383FD005B15F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E160010A1A9383FD005B15F7 /* ArchPortTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchPortTests.m; sourceTree = "<group>"; };
+		E16001141A9384F2005B15F7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		E16001161A938556005B15F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E16001181A938564005B15F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E160011A1A93856D005B15F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E160011C1A938577005B15F7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E160011D1A938577005B15F7 /* libz.dylib in Frameworks */,
+				E160011B1A93856D005B15F7 /* Foundation.framework in Frameworks */,
+				E16001191A938564005B15F7 /* UIKit.framework in Frameworks */,
+				E16001171A938556005B15F7 /* CoreGraphics.framework in Frameworks */,
+				E16001151A9384F2005B15F7 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +79,11 @@
 			isa = PBXGroup;
 			children = (
 				E16000ED1A9383FD005B15F7 /* ArchPort */,
+				E160011C1A938577005B15F7 /* libz.dylib */,
+				E160011A1A93856D005B15F7 /* Foundation.framework */,
+				E16001181A938564005B15F7 /* UIKit.framework */,
+				E16001161A938556005B15F7 /* CoreGraphics.framework */,
+				E16001141A9384F2005B15F7 /* MessageUI.framework */,
 				E16001071A9383FD005B15F7 /* ArchPortTests */,
 				E16000EC1A9383FD005B15F7 /* Products */,
 			);
@@ -81,11 +101,11 @@
 		E16000ED1A9383FD005B15F7 /* ArchPort */ = {
 			isa = PBXGroup;
 			children = (
+				E16000F81A9383FD005B15F7 /* Main.storyboard */,
 				E16000F21A9383FD005B15F7 /* AppDelegate.h */,
 				E16000F31A9383FD005B15F7 /* AppDelegate.m */,
 				E16000F51A9383FD005B15F7 /* ViewController.h */,
 				E16000F61A9383FD005B15F7 /* ViewController.m */,
-				E16000F81A9383FD005B15F7 /* Main.storyboard */,
 				E16000FB1A9383FD005B15F7 /* Images.xcassets */,
 				E16000FD1A9383FD005B15F7 /* LaunchScreen.xib */,
 				E16000EE1A9383FD005B15F7 /* Supporting Files */,
@@ -168,6 +188,7 @@
 				TargetAttributes = {
 					E16000EA1A9383FD005B15F7 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4SPW49WK35;
 					};
 					E16001031A9383FD005B15F7 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -297,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -343,9 +364,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ArchPort/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -353,9 +378,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ArchPort/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
